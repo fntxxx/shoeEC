@@ -1,0 +1,119 @@
+.section--sale {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    width: 100vw;
+    margin: 48px -50vw;
+    width: 100vw;
+    height: 470px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/banner-co-branded-lg.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include pad {
+        background-image: url("../img/banner-co-branded-sm.png");
+        height: 450px;
+        margin: 24px -50vw;
+    }
+}
+
+.section--sale__content {
+    width: 634px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+
+    @include pad {
+        width: 351px;
+        gap: 32px;
+    }
+}
+
+.section--sale__text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+
+    @include pad {
+        gap: 24px;
+    }
+}
+
+.section--sale__title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+
+    >div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include pad {
+            flex-direction: column;
+        }
+    }
+}
+
+.sale__brand,
+.sale__collab {
+    color: #ffffff;
+
+    @include display-2;
+
+    @include pad {
+        @include heading-2
+    }
+}
+
+.sale__highlight {
+    color: #C0FA73;
+
+    @include heading-1;
+
+    @include pad {
+        @include heading-3;
+    }
+}
+
+.sale__subtitle {
+    color: #ffffff;
+
+    @include heading-2;
+
+    @include pad {
+        @include heading-5;
+    }
+}
+
+.sale__desc {
+    color: #ADB5BD;
+    text-align: center;
+    @include label-lg;
+
+    @include pad {
+        @include label-md;
+    }
+}
+
+.sale__btn {
+    @include btn--primary;
+}
+
+.sale__btn-label {
+    @include label-md;
+}

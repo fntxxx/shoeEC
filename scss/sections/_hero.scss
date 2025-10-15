@@ -1,0 +1,76 @@
+.hero {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    width: 100vw;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/Banner-lg.png");
+    display: flex;
+    align-items: center;
+
+    @include pad {
+        background-image: url("../img/Banner-sm.png");
+        height: 480px;
+        justify-content: center;
+    }
+}
+
+.hero__content {
+    width: 586px;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 48px;
+
+    p {
+        color: #ffffff;
+        margin: 0;
+    }
+
+    @include pad {
+        margin-left: 0;
+        width: 327px;
+        gap: 32px;
+    }
+}
+
+.hero__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+
+    @include pad {
+        gap: 8px;
+    }
+
+    &-primary {
+        @include display-1;
+
+        @include pad {
+            @include display-2;
+        }
+    }
+
+    &-slogan {
+        @include heading-3;
+
+        @include pad {
+            @include heading-5;
+        }
+    }
+}
+
+.hero__btn {
+    @include btn--primary;
+}
+
+.hero__btn-label {
+    @include label-md;
+}

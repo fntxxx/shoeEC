@@ -1,0 +1,9 @@
+.site-container {
+    max-width: 1296px;
+    margin: 0 auto;
+    font-family: 'Noto Sans TC', sans-serif;
+
+    @include pad {
+        max-width: 375px;
+    }
+}

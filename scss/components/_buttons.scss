@@ -1,0 +1,33 @@
+.btn--icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin btn--primary {
+    display: flex;
+    background-color: #C0FA73;
+    color: #212529;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 4px;
+    white-space: nowrap;
+    padding: 12px 24px;
+    max-width: 115px;
+}
+
+@mixin btn--neutral-filled {
+    display: flex;
+    background-color: #212529;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 4px;
+    white-space: nowrap;
+    padding: 12px 24px;
+    max-width: 115px;
+}

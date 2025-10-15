@@ -1,0 +1,11 @@
+@mixin link--neutral {
+    width: 67px;
+    height: 48px;
+    background-color: #FFFFFF;
+    color: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
