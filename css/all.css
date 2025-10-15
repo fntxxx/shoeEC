@@ -356,14 +356,6 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.btn--icon {
-  width: 48px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .site-container {
   max-width: 1296px;
   margin: 0 auto;
@@ -488,6 +480,14 @@ body::-webkit-scrollbar {
   .header__nav-links-sm {
     display: flex;
   }
+}
+
+.header__person {
+  max-width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
 }
 
 .footer {

@@ -85,3 +85,7 @@
         display: flex;
     }
 }
+
+.header__person {
+    @include btn--icon;
+}
